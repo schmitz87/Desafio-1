@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./materialize/css/materialize.css" />
+
+    <title>Desafio Modulo 1</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <h1 class="center">Pesquisa de usuários</h1>
+
+    <div id="spinner" class="flex-row flex-center">
+      <div class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <span style="margin-left: 10px;">Aguarde...</span>
+    </div>
+
+    <div class="flex-row flex-center">
+      <input type="text" id="inputFilter" placeholder="Digite aqui" />
+      <button
+        id="buttonFilter"
+        class="waves-effect waves-light btn"
+        style="margin-left: 5px;"
+      >
+        Buscar
+      </button>
+    </div>
+
+    <div class="search-container">
+      <div class="users">
+        <h4>
+          <span id="text-users">
+            Nenhum usuário filtrado
+          </span>
+        </h4>
+        <span id="filtered-users"></span>
+        <div id="tab-people"></div>
+      </div>
+
+      <div class="statistics">
+        <h4>
+          <span id="text-statistics">
+            Nada a ser exibido
+          </span>
+        </h4>
+        <span id="statistics"></span>
+        <div id="tab-statistics"></div>
+      </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
