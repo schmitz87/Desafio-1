@@ -1,8 +1,6 @@
 let globalUsers = [];
 let filteredUsers = [];
 
-let numberFormat = null;
-
 let inputFilter = document.querySelector('#inputFilter');
 let buttonFilter = document.querySelector('#buttonFilter');
 let tabPeople = document.querySelector('#tab-people');
